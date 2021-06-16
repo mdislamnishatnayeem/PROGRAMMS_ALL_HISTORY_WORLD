@@ -11,65 +11,45 @@
   <body>
     <div class="top"><a href="https://mdislamnishatnayeem.github.io/Nayeem_Islam_Nishat/">Md.Nayeem Islam Nishat</a></div>
   <div style="color:red; background:yellow;">
-<b>Question:</b>1²+1001²+2001²+3001².... এই ধারার 1000 তমপদের সমষ্টি বের কর! পাইথন প্রোগ্রামিং এ লিখা নিচের code টি আমার নিজের লেখা।<br>
+<b>Question:</b>'বিজ্ঞান চিন্তা' ম্যাগাজিন হতে প্রাপ্ত একটি সমস্যা!একটি সংখ্যার একদম ডানে এককের ঘরে রয়েছে ৮। একে সংখ্যাটির একদম বাই এনে বসালে নতুন সংখ্যাটি আগের সংখ্যার ৭ গুণ হয়ে যায় বলতে হবে সংখ্যাটি কত? পাইথন প্রোগ্রামিং এ লিখা নিচের code টি আমার নিজের লেখা।<br>
 <a href="programm1.html"style="background:yellow; text-decoration:none;">Click here</a>
+</div>
+<div style="background:#E4D00A ;color:black; padding:5px;">
+  <h1 class="top">The Algorithm</h1>
+    """<br>
+      ---এই সমস্যাটি আমি পেয়েছিলাম বিজ্ঞানচিন্তা ম্যাগাজিনের সেপ্টেম্বর 2018 সালের সম্পাদকীয় এ। যিনি প্রশ্নটি করেছিলেন তিনি একটি clue দিয়ে দিয়েছিলেন যে -সে সংখ্যাটি হবে ২২ অংকের(ডিজিট) বিশাল এক সংখ্যা।<br><br>
+      তাই আমি সমাধানের ক্ষেত্রে নিচের প্রোগ্রামটি পাইথন প্রোগ্রামিং ল্যাঙ্গুয়েজ দিয়ে তৈরি করেছি। যেহেতু সংখ্যাটি 22 অংকের। তাই আমি b=22 ডিজিটের ধরে এখান থেকে শুরু করেছি সংখ্যাটি খোজা। কিন্তু প্রোগ্রাম তো চলতেই আছে। অসংখ্য অসংখ্য সংখ্যা ,কাউন্ট করতে এভাবে প্রচুর সময় লেগে যাবে। তাই নিরাশ হয়ে বলতে হচ্ছে প্রোগ্রামটি তো তৈরি করেছি কিন্তু সঠিক উত্তর এখনো পাইনি আমি।
+ 
+   """<br>
+
 </div>
     
 
  <pre >
-      # 1 -->1
-#2-->1001
-#3-->2001
-#4-->3001
-print("The first Number:1")
-print("And the Sum:1")
-print(" ")
-print("The 2  nd Number:1002001")
-print("And the Sum:1002002")
-print(" ")
-The_Sum=1002002
-for number in range(2,1008):
-	
-	a="1001"
-	b=a[::-1]
-     #reverse korlam
-     
-	l = len(b)
- 
-	remove_last = b[:l-1]
-	
-	if(number>=10):
-		remove_last=b[:l-1]
-	if(number>=100):
-		remove_last=b[:l-1]
-		remove_last=b[:l-1]
-	if(number>=1000):
-		remove_last=b[:l-1]
-		remove_last=b[:l-1]
-		remove_last=b[:l-1]
-	# number ke string e convert kore nebo
-	str_number=str(number)
-	str_reverse_num=str_number[::-1]
-	
-	 
-	final_number=remove_last+str_reverse_num
-	  #4 string take add kore dwbo sese.
-	  
-	  
-	  
-	#  abar riverse 
-	
-	k=final_number[::-1]
-	exit=int(k)
-	print("The",number+1,"th number is:",exit,"^2")
-	The_Number=exit**2
-	print("The",number+1,"th number is:",The_Number)
-	The_Sum=The_Sum+The_Number
-	#print(number)
-	print("And the Sum is:",The_Sum)
-	#then string to number 
-	print("")
-	#then ok
+      
+xx=0;
+b="1000000000000000000008"
+while(1):
+    #   b="348"
+    c=b;
+    number1=int(c);
+    print(number1);
+    b = b[:0] + "8" +b[0:]
+    b= b[:-1]
+    d=b;
+    number2=int(d)
+    print(number2);
+    #print(b)
+    man=number2/number1
+    if(man==7):
+        break;
+    print(man);
+    number1=number1+10;
+    b=str(number1)
+#   print(number1);
+   
+    
+    xx=xx+1;
 </pre>
 
  <div style="color:darkred; background:yellow;text-align:center;">
