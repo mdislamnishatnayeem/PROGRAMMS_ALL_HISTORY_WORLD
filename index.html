@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <title>Nayeem Islam Nishad</title>
+  </head>
+  <body>
+    <div class="top">Md.Nayeem Islam Nishat</div>
+  <div style="color:red; background:yellow;">
+<b>Question:</b>1²+1001²+2001²+3001².... এই ধারার 1000 তমপদের সমষ্টি বের কর! পাইথন প্রোগ্রামিং এ লিখা নিচের code টি আমার নিজের লেখা।<br>
+<a href="programm1.html"style="background:yellow; text-decoration:none;">Click here</a>
+</div>
+    
+
+      <pre >
+      # 1 -->1
+#2-->1001
+#3-->2001
+#4-->3001
+print("The first Number:1")
+print("And the Sum:1")
+print(" ")
+print("The 2  nd Number:1002001")
+print("And the Sum:1002002")
+print(" ")
+The_Sum=1002002
+for number in range(2,1008):
+	
+	a="1001"
+	b=a[::-1]
+     #reverse korlam
+     
+	l = len(b)
+ 
+	remove_last = b[:l-1]
+	
+	if(number>=10):
+		remove_last=b[:l-1]
+	if(number>=100):
+		remove_last=b[:l-1]
+		remove_last=b[:l-1]
+	if(number>=1000):
+		remove_last=b[:l-1]
+		remove_last=b[:l-1]
+		remove_last=b[:l-1]
+	# number ke string e convert kore nebo
+	str_number=str(number)
+	
+	 
+	final_number=remove_last+str_number
+	  #4 string take add kore dwbo sese.
+	  
+	  
+	  
+	#  abar riverse 
+	
+	k=final_number[::-1]
+	exit=int(k)
+	The_Number=exit**2
+	print("The",number+1,"th number is:",The_Number)
+	The_Sum=The_Sum+The_Number
+	#print(number)
+	print("And the Sum is:",The_Sum)
+	#then string to number 
+	print("")
+	#then ok
+</pre>
+
+ <div style="color:darkred; background:yellow;text-align:center;">
+   The End
+   <div>
+ 
+  </body>
+</html>
