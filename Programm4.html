@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <title>Nayeem Islam Nishad</title>
+  </head>
+  <body>
+    <div class="top"><a href="https://mdislamnishatnayeem.github.io/Nayeem_Islam_Nishat/">Md.Nayeem Islam Nishat</a></div>
+  <div style="color:red; background:yellow;">
+<b>Question:</b> এমন কোন সংখ্যা আছে যার অঙ্কগুলোর সমষ্টি  এবং সেই সংখ্যার 
+দ্বিগুণ এর অংক গুলোর
+ সমষ্টির সমষ্টি 18
+<a href="programm1.html"style="background:yellow; text-decoration:none;">'বিজ্ঞান চিন্তা' ম্যাগাজিন হতে প্রাপ্ত একটি সমস্যা</a>
+</div>
+<div style="background:#E4D00A ;color:black; padding:5px;">
+  <h1 class="top">The Algorithm</h1>
+  next time
+</div>
+    
+
+ <pre >
+  
+ for i in range(10,500):
+	syr_i=str(i)
+#	print(   i)
+	sum=0
+	sum2=0
+	for digit in syr_i:
+	#	print(digit)
+		digit_int=int(digit)
+	#	print(digit_int,"______")
+		sum=sum+digit_int
+#	print(sum,"_")
+	digun=i*2
+#	print(digun)
+	digun_str=str(digun)
+	for x in digun_str:
+		digit2_int=int(x)
+		sum2=sum2+digit2_int
+#	print("Sum 1:",sum)
+#	print("Sum 2:",sum2)
+	if(sum+sum2==18):
+		print(i)
+</pre>
+
+ <div style="color:darkred; background:yellow;text-align:center;">
+   The End
+   <div>
+ 
+  </body>
+</html>
